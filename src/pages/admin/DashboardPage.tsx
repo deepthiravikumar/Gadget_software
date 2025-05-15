@@ -149,7 +149,7 @@ const DashboardPage: React.FC = () => {
                             {new Date(order.createdAt).toLocaleDateString()}
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-600">
-                            ${order.finalAmount.toFixed(2)}
+                            ₹{order.finalAmount.toFixed(2)}
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap">
                             <span className={`px-2 inline-flex text-xs leading-5 font-semibold rounded-full ${

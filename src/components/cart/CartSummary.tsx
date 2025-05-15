@@ -55,25 +55,25 @@ const CartSummary: React.FC = () => {
       <div className="space-y-3">
         <div className="flex justify-between text-sm">
           <span className="text-gray-600">Subtotal</span>
-          <span className="text-gray-900 font-medium">${subtotal.toFixed(2)}</span>
+          <span className="text-gray-900 font-medium">₹{subtotal.toFixed(2)}</span>
         </div>
         
         {discount > 0 && (
           <div className="flex justify-between text-sm">
             <span className="text-gray-600">Discount</span>
-            <span className="text-green-600 font-medium">-${discount.toFixed(2)}</span>
+            <span className="text-green-600 font-medium">-₹{discount.toFixed(2)}</span>
           </div>
         )}
         
         <div className="flex justify-between text-sm">
           <span className="text-gray-600">Tax (3%)</span>
-          <span className="text-gray-900 font-medium">${tax.toFixed(2)}</span>
+          <span className="text-gray-900 font-medium">₹{tax.toFixed(2)}</span>
         </div>
         
         <div className="border-t border-gray-200 my-3 pt-3">
           <div className="flex justify-between">
             <span className="text-gray-900 font-semibold">Total</span>
-            <span className="text-gray-900 font-bold">${total.toFixed(2)}</span>
+            <span className="text-gray-900 font-bold">₹{total.toFixed(2)}</span>
           </div>
         </div>
       </div>

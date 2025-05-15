@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Product } from '../../types';
 import ProductCard from './ProductCard';
-import Input from '../ui/Input';
 import { Search, Filter } from 'lucide-react';
 
 interface ProductListProps {

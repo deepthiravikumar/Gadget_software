@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { products } from '../../data/products';
 import ProductCard from '../../components/products/ProductCard';
 import Button from '../../components/ui/Button';
-import { ArrowRight, Star, Award, Truck, Headset as HeadsetMic } from 'lucide-react';
+import { ArrowRight,  Award, Truck, Headset as HeadsetMic } from 'lucide-react';
 
 const HomePage: React.FC = () => {
   // Get featured products (products with discount)

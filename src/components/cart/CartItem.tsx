@@ -48,7 +48,7 @@ const CartItem: React.FC<CartItemProps> = ({ item }) => {
         <div>
           <div className="flex justify-between text-base font-medium text-gray-900">
             <h3>{product.name}</h3>
-            <p className="ml-4">${itemTotal.toFixed(2)}</p>
+            <p className="ml-4">₹{itemTotal.toFixed(2)}</p>
           </div>
           <p className="mt-1 text-sm text-gray-500 capitalize">{product.category}</p>
         </div>

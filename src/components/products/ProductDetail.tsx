@@ -3,7 +3,6 @@ import { ShoppingCart, Plus, Minus } from 'lucide-react';
 import { Product } from '../../types';
 import { useCart } from '../../contexts/CartContext';
 import Button from '../ui/Button';
-import Card from '../ui/Card';
 
 interface ProductDetailProps {
   product: Product;
@@ -58,15 +57,15 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product }) => {
           {discountedPrice ? (
             <>
               <span className="text-3xl font-bold text-gray-900">
-                ${discountedPrice.toFixed(2)}
+                ₹{discountedPrice.toFixed(2)}
               </span>
               <span className="ml-3 text-lg text-gray-500 line-through">
-                ${product.price.toFixed(2)}
+                ₹{product.price.toFixed(2)}
               </span>
             </>
           ) : (
             <span className="text-3xl font-bold text-gray-900">
-              ${product.price.toFixed(2)}
+              ₹{product.price.toFixed(2)}
             </span>
           )}
         </div>
